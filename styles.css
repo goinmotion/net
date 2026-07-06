@@ -528,7 +528,8 @@ p {
   margin-top: 34px;
 }
 
-.partner-strip span {
+.partner-strip span,
+.partner-strip a {
   min-height: 76px;
   display: grid;
   place-items: center;
@@ -537,6 +538,16 @@ p {
   background: var(--white);
   box-shadow: 0 12px 34px rgba(9, 9, 9, 0.05);
   font-weight: 900;
+}
+
+.partner-strip a {
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.partner-strip a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 90, 20, 0.28);
+  box-shadow: 0 18px 44px rgba(9, 9, 9, 0.08);
 }
 
 .partner-note,
